@@ -28,12 +28,16 @@ El archivo compose.yaml permitirá configurar dos servicios de acuerdo con el si
 - Línea 43 es necesario que el wordpress-container se encuentre disponible en todo momento, defina una política de reinicio adecuada para esto
 - wordpress-vol y mysql-vol son volúmenes nombrados.
 
+<img width="476" height="788" alt="image" src="https://github.com/user-attachments/assets/4c7132f3-bec7-46ea-a6b0-0af659381720" />
+
+
 ### Ejecutar Docker compose
 Este comando descargará las imágenes necesarias, creará y ejecutará los contenedores según lo definido en el archivo compose.yaml
 Para ejecutar en modo "detached" (en segundo plano) se agrega la opción -d:
 ```
 docker compose up -d
 ```
+<img width="1763" height="680" alt="image" src="https://github.com/user-attachments/assets/40eb8315-7310-4ee2-9760-6a7c94184684" />
 
 ### Ejecutar Docker compose para servicios que no se crearon correctamente
 Si algún servicio no se creó correctamente se puede usar
@@ -46,8 +50,12 @@ docker compose up -d <nombre servicio>
 docker compose ps
 ```
 ### COMPLETAR CON UNA CAPTURA DE PANTALLA DEL LISTADO DE LOS CONTENEDORES EN EJECUCIÓN
+<img width="1729" height="228" alt="image" src="https://github.com/user-attachments/assets/b5543e45-f911-4368-b9c6-41b23076ac02" />
+
 
 ### Detener y eliminar los contenedores definidos en el archivo
 ```
 docker compose down
 ```
+<img width="1737" height="253" alt="image" src="https://github.com/user-attachments/assets/51ffe9e8-350b-4a92-ab4b-83966dbfddb8" />
+
